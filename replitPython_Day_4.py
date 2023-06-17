@@ -1,0 +1,1 @@
+print("""Welcome to our adventure simulator! I am going to ask you a bunch of questions and then create an epic story with you as the star!""")
