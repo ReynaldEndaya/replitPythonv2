@@ -1,0 +1,3 @@
+print('WanPanMan Character Generator')
+
+
