@@ -17,10 +17,10 @@ if show == '1':
         print('Not even close sorry!')
 elif show == '2':
     personSaved = input('Who did Saitama saved that led to the founding of the Hero Association?' )
-    if personSaved == 'son of founder':
+    if personSaved == 'grandson of founder':
         print('That\'s correct! You really are a Wanpanman fan!')
     else:
-        print('Wrong he saved the founder\'s son')
+        print('Wrong he saved the founder\'s grand son')
 else:
     print('Sorry that\'s not part of the options!')
               
