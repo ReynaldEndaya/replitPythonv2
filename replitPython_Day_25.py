@@ -9,8 +9,6 @@
 
 import random
 
-print('Roll a Dice')
-
 def rollDice(sides):
     
     # while True:    
@@ -33,4 +31,8 @@ while True:
     warriorName = input('Name your warrior: ')
     warriorHealth = healthStatsCreator()
     print('Their health is',warriorHealth)
-    
+    newCharacter = input('Generate another character? y|n: ')
+    if newCharacter.lower() == 'y':
+        continue
+    else:
+        break
