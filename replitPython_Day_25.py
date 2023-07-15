@@ -6,20 +6,10 @@
 # 4. Print out the character's health stats.
 # 5. Add a loop to give the user the option to generate health stats for another character.
 
-
 import random
 
-def rollDice(sides):
-    
-    # while True:    
+def rollDice(sides):      
     number = random.randint(1,sides)
-        # print('You rolled ',number)
-        # repeat = input('Roll again? (y|n): ')
-        # if repeat.lower() == 'n':
-        #     break
-        # else:
-        #     continue
-    
     return number
 
 def healthStatsCreator():
