@@ -1,5 +1,4 @@
 # Let's extend Day 24's project and create a health stats generator for a character in a video game.
-
 # 1. Create a subroutine that rolls a dice of any size and returns that number.
 # 2. Then, create a second subroutine that rolls one six-sided dice and one eight-sided dice.
 # 3. Multiply the number from the six-sided dice and eight-sided dice together and return that subroutine as a character's health stats for a video game.
@@ -15,12 +14,14 @@ def rollDice(sides):
 def healthStatsCreator():
     health = rollDice(6) * rollDice(8)
     return health
-    
+
+print()
 while True:
     
     warriorName = input('Name your warrior: ')
     warriorHealth = healthStatsCreator()
-    print('Their health is',warriorHealth)
+    print('Their health is',warriorHealth,'hp',end="")
+    print()
     newCharacter = input('Generate another character? y|n: ')
     if newCharacter.lower() == 'y':
         continue
