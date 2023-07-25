@@ -7,23 +7,26 @@
 
 import random
 
-def rollDice(sides):      
-    number = random.randint(1,sides)
-    return number
+
+def rollDice(sides):
+  number = random.randint(1, sides)
+  return number
+
 
 def healthStatsCreator():
-    health = rollDice(6) * rollDice(8)
-    return health
+  health = rollDice(6) * rollDice(8)
+  return health
 
-print()
+
 while True:
-    
-    warriorName = input('Name your warrior: ')
-    warriorHealth = healthStatsCreator()
-    print('Their health is',warriorHealth,'hp',end="")
-    print()
-    newCharacter = input('Generate another character? y|n: ')
-    if newCharacter.lower() == 'y':
-        continue
-    else:
-        break
+  print()
+  warriorName = input('Name your warrior: ')
+  warriorHealth = healthStatsCreator()
+  print('Their health is', warriorHealth, 'hp', end="")
+  print()
+  newCharacter = input('Generate another character? y|n: ')
+  print()
+  if newCharacter.lower() == 'y':
+    continue
+  else:
+    break
