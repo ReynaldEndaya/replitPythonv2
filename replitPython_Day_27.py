@@ -27,6 +27,7 @@ def characterProfile():
     return characterName
 
 while True:
+    os.system('clear')
     print('Character Builder')
     
     print()
@@ -40,5 +41,14 @@ while True:
     print('Health:',health)
     time.sleep(1)
     print('Strength:',strength)
+    time.sleep(1)
     print()
-    print('May your name go down in legend!')
+    time.sleep(1)
+    print('May your name go down in legend!`')
+    print()
+    newCharacterEntry = input('Enter new character? (y|n): ')
+    
+    if newCharacterEntry.lower() == 'y':
+        continue
+    else: 
+        break
