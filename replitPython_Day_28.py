@@ -15,40 +15,59 @@ def rollDice(sides):
 
 def healthStatsCreator():
   health = (rollDice(6) * rollDice(12))/2 + 10
-  # return health
+  return health
 
 def strengthStatsCreator():
     strength = (rollDice(6) * rollDice(12))/2 + 12
-    # return strength
+    return strength
 
 def characterProfile():
     characterName = input('Name your legend: ')
     characterType = input('Character Type (Human, Elf, Wizard, Orc): ')
-    # return characterName
+    return characterName
 
 while True:
     os.system('clear')
-    print('Character Builder')
+    print('⚔️ Battle Time ⚔️')
     
     print()
-    characterName = characterProfile()    
-    health = healthStatsCreator()
-    strength = strengthStatsCreator()
+    characterName_1 = characterProfile()
+    health_1 = healthStatsCreator()
+    strength_1 = strengthStatsCreator()
     print()
     
-    print(characterName)
+    print(characterName_1)
     time.sleep(1)
-    print('Health:',health)
+    print('Health:',health_1)
     time.sleep(1)
-    print('Strength:',strength)
+    print('Strength:',strength_1)
     time.sleep(1)
     print()
-    time.sleep(1)
-    print('May your name go down in legend!`')
     print()
-    newCharacterEntry = input('Enter new character? (y|n): ')
+    time.sleep(1)
     
-    if newCharacterEntry.lower() == 'y':
-        continue
-    else: 
-        break
+    print('Who are they battling?')
+    
+    print()
+    characterName_2 = characterProfile()
+    health_2 = healthStatsCreator()
+    strength_2 = strengthStatsCreator()
+    
+    print(characterName_2)
+    time.sleep(1)
+    print('Health:',health_2)
+    time.sleep(1)
+    print('Strength:',strength_2)
+    time.sleep(1)
+    print()
+    
+    os.system('clear')
+    print('⚔️ Battle Time ⚔️')
+    print()
+    print('The Battle Begins')
+    print()
+    
+    if 
+    
+    
+    
