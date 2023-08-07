@@ -1,7 +1,36 @@
-print('Reynald Emmanuel Endaya')
-print('2023-06-12')
-print('''I am signing up for Replit's 100 days of Python challenge!
-I will make sure to spend some time every day coding along, for a minimum of 10 minutes a day.
-I'll be using Replit, an amazing online IDE so I can do this from my phone wherever I happend to be. No excuses for not coding from the middle of a field!''')
-print('I am feeling 😀️')
-print('You can follow my progress at replit.com/@ReynaldEndaya')
+#Write a subroutine that writes text in color. All it will do is print out the text in that color and turn the color back to normal when it's finished.
+#Control end and sep so there are not random symbols or spaces.
+#Check out this github resource for the color codes.
+
+
+def colorizer(color,word):
+    if color == 'red':
+        print("\033[0;31m",word,sep='',end='')
+    elif color == 'yellow':
+        print("\033[1;33m",word,sep='',end='')
+    elif color == 'cyan':
+        print("\033[0;36m",word,sep='',end='')
+    elif color == 'pink':
+        print("\033[1;35m",word,sep='',end='')
+    else:
+        print("\033[0;30m",worddfd,sep='',end='')
+
+print("\033[1;33m",'Super Subroutine',sep='')
+print()
+print("\033[1;33m",'With my',end=' ',sep='')
+colorizer('pink','new program')
+colorizer('yellow','I can just call red("and")')
+print(end=' ')
+colorizer('red','and')
+print(end=' ')
+colorizer('yellow','that word will appear in color I set it to.')
+print()
+print()
+colorizer('yellow','With no')
+print(end=' ')
+colorizer('cyan','weird gaps')
+colorizer('yellow','.')
+print()
+print()
+colorizer('yellow','Epic.')
+print()
