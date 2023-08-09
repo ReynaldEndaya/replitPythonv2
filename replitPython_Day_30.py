@@ -13,7 +13,7 @@ def colorizer(color,word):
     elif color == 'pink':
         print("\033[1;35m",word,sep='',end='')
     else:
-        print("\033[0;30m",worddfd,sep='',end='')
+        print("\033[0;30m",word,sep='',end='')
 
 print("\033[1;33m",'Super Subroutine',sep='')
 print()
