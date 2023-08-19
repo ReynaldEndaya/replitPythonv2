@@ -7,6 +7,6 @@ for day in range(1,31):
     comment = input()
     print()
     response = f"You thought day {day} is {comment}"
-    print(response)
+    textLength = int(len(response))+10
+    print(f"{response: ^{textLength}}")
     print()
-    
