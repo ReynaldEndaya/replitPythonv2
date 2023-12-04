@@ -10,22 +10,53 @@
 
 
 listName = []
+addNewTask = ''
 
 def printList():
+    counter = 0
     print()
     for item in listName:
+        counter += 1
+        print(f'{counter}. ',end='')
         print(item)
     print()
 
 
+# function to create list
 def createList(): 
-    while True:
-        item = input('What\'s in the agenda? ')
-        listName.append(item)
-        for item in listName:
-            print(item)
-        print()
-    
+    addNewTask=''
+    item = input('What\'s in the agenda? ')
+    listName.append(item)
+    for item in listName:
+        print(item)
+    print()
+        
+def editList():
+    print('Current task list:')
+    printList()
+    taskToRemove = input('Which task do you want to remove? ')
+    if taskToRemove in listName:
+        listName.remove(taskToRemove)
+    else:
+        print('Task not in List')
+        
 # main code
 print('To do List Manager')
-print('Do you want to (v)iew, (a)dd, or (e)dit your to do list?')
+print()
+while True:
+    option = input('Do you want to (v)iew, (a)dd, or (e)dit your to do list? ')
+    if option.lower() == 'v':
+        printList()
+    elif option.lower() == 'a':
+        while True:
+            createList()
+            addNewTask = input('Add more task? (y) or (n): ')
+            if addNewTask.lower() == 'y':
+                continue
+            else: 
+                break
+    elif option.lower() == 'e':
+        editList()
+    else:
+        print('No action selected! Exiting now...')
+        break
