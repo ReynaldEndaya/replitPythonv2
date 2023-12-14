@@ -32,6 +32,7 @@ def createList():
     print()
         
 def editList():
+    print()
     print('Current task list:')
     printList()
     taskToRemove = input('Which task do you want to remove? ')
@@ -39,7 +40,7 @@ def editList():
         listName.remove(taskToRemove)
     else:
         print('Task not in List')
-        
+
 # main code
 print('To do List Manager')
 print()
@@ -51,6 +52,7 @@ while True:
         while True:
             createList()
             addNewTask = input('Add more task? (y) or (n): ')
+            print()
             if addNewTask.lower() == 'y':
                 continue
             else: 
