@@ -42,7 +42,7 @@ def printEmail():
         We might just do that anyway.
                 
         Love and hugs,
-        Reynald Endaya ''')
+        Mr. Nanami ''')
         time.sleep(3)
         os.system('clear')
         time.sleep(1)
